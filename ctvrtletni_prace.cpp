@@ -1,3 +1,37 @@
+/*---------------------------------------------------------------
+Etapa 1
+Vaším úkolem je vytvořit obchod který má funkce:
+Nákup zboží ze min. 2 kategorií
+Každé zboží může uživatel koupit Xkrát a má svůj cenový koeficient
+Po ukončení nákupu dostane uživatel účtenku s celkovou cenou
+---------------------------------------------------------------
+Etapa 2
+Účtenka zobrazí položky které uživatel koupil.
+Účtenka vygeneruje 2 náhodné kódy FIK a PKN(formát:     a       (Náhodné čísla)
+Uživatel si bude moc zvolit zpusob platby, Karta kde bude muset zadat PIN aby prošla platba
+(Pin muze byt vzdy stejny)
+Přidejte 3. kategorii zboží která bude mít 2 cenové kategorie
+S slevou 15% (zada slevovy kod - ILOVEPROGRAMOVANI)
+beze slevy
+Uživatel si může zvolit mezi těmito kategoriemi
+---------------------------------------------------------------
+Etapa 3
+Okomentujte všechny:
+Funkce
+Switche
+Podivně pojmenovane proměnné (např. Wtfdoesthisdo = 5;)
+Případné výpočty
+Pokud uživatel nakoupil za více jak x(zvolte vy) oznamte že vyhrál lednici
+Bonus: vytvořte šanci 1ku1000 že uživatel bude mít nákup zadarmo
+---------------------------------------------------------------
+Etapa 4
+Přidejte náhodně generované:
+Číslo prodejny a pokladny
+Jmeno pokladniho: Pepa, Veronika, Hammond
+Optimalizujte váš kód
+Soubor zazipujte a pošlete na mail
+*/
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -25,7 +59,7 @@ int main(){
           { 0.85*ceny [0][2], 0.85*ceny [1][2], 0.85*ceny [2][2], 0.85*ceny [3][2]} //dobroty se slevou
         },
         finalniCena=0;
-    //string  // array pro zbo��
+    //string  // array pro zboží
     bool reset1=1;/* opakovani hlavni menu (loop) 1=ano, 0=ne */
     while(reset1==1){
         bool reset2=1;/* opakovani menu peciva*/
